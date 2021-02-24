@@ -8,8 +8,13 @@
 </head>
 <body>
 <%= 
-	"Nome recebido: "+ request.getParameter("nome")
+
+"Nome recebido: "+ request.getParameter("nome")
 %>
- 	
+<p>
+<%= request.getLocalPort() %> 
+<p>
+ <% response.sendRedirect("https://www.google.com"); %>
+
 </body>
 </html>
